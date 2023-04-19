@@ -1,25 +1,138 @@
+
+html{
+    font-family: 'Nunito', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #d500f9;
+}
+a:hover{
+    opacity: 0.5;
+}
+a:active{
+background: red;
+}
+.tittle{
+    text-transform: uppercase;
+    text-align: center;
+
+}
 .container {
 
     background: #11998e;
     background: -webkit-linear-gradient(to right, #11998e, #38ef7d);
     background: linear-gradient(to right, #11998e, #38ef7d);
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .content {
     max-width: 960px;
-    max-height: 500px;
     width: 100%;
-    height: 100%;
+    height: 80vh;
     background-color: white;
+    margin-top: 10em;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),0 3px 6px rgba(0, 0, 0, 0,0.23);
+    border-radius: 4px;
+    position: relative;
+    padding: 1.8em;
+    overflow:scroll;
+}
+.actions{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+.close{
+    height: 40px;
+    width: 40px;
+    color: white;
+    border-radius: 50%;
+    background-color: #11998e;
+    display: inline-block;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),0 3px 6px rgba(0, 0, 0, 0,0.23);
+    font-weight: 300;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.paragraph{
+    line-height: 1.8em;
+    font-weight: 300;
 }
 
-.red {
-    height: 200px;
-    width: 100px;
-    background-color: red;
+.fa-star{
+    color: #ffc400;
+
+
 }
 
+.table {
+    width: 100%;
+    border-spacing: 0;
+}
+.table td, .table th{
+    padding: 1em;
+    text-align: left;
+}
 #boton-pago {
     background-color: yellow;
+}
+
+.table tr:nth-child(even){background-color: #f3e5f5;}
+
+.tittle-item{
+    /*border-bottom-style: solid;
+    border-width: 2px;
+    border-color: #C6426E;*/
+    border-bottom: solid 2px #11998e;
+    padding-bottom: 1em;
+    padding-top: 0em;
+    font-size: 2em;
+}
+.address{
+    font-weight: bold;
+    color: #642B73;
+    font-size: 1.2em;
+    margin-top: 2em;
+    display: inline-block;
+
+}
+.main-image{
+    float: left;
+    margin-right: 1em;
+    height: 250px;
+}
+.position{
+    background-color: #11998e;
+    padding: 0.5em ;
+    border-radius: 4px;
+    margin-right: 0.5em;
+    color: whitesmoke;
+}
+@media (max-width:600px){
+    .content{
+        padding: 1em;
+    }
+    td{
+        display: block;
+        width: 100%;
+    }
+    td:nth-of-type(1){
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #11998e;
+    }
+    th{
+        display: none;
+    }
+}
+@media (min-height:550px){
+    .content{
+        height: 500px;
+    }
 }
