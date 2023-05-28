@@ -36,7 +36,7 @@ links.forEach(function (link) {
         content.classList.add("animate__animated");
         //tiempo
         setTimeout(function () {
-            location.href = "/boletines";
+            location.href = "/";
         }, 600);
         /* setInterval(function(){
              location.href = "/";
