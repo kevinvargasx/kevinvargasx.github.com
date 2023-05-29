@@ -9,6 +9,7 @@ document.querySelector('#nav-close').onclick = () =>{
     navbar.classList.remove('active');
 }
 
+
 let searchForm = document.querySelector('.search-form');
 
 

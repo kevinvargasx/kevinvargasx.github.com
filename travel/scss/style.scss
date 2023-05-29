@@ -140,7 +140,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center ;
-    z-index: 0000;
+    z-index: 10000;
     transform: translateY(-110%);
 
     &.active{
@@ -211,7 +211,7 @@ section{
 
         .content{
             width: 50rem;
-            text-shadow: 0px 0px 7px $light-bg; // shadow letra
+            //text-shadow: 0px 0px 7px $light-bg; // shadow letra
 
             span{
                 font-size: 4rem;

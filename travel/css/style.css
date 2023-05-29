@@ -115,7 +115,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 0;
+  z-index: 10000;
   transform: translateY(-110%);
 }
 .search-form.active {
@@ -177,7 +177,6 @@ section {
 }
 .home .box .content {
   width: 50rem;
-  text-shadow: 0px 0px 7px #eee;
 }
 .home .box .content span {
   font-size: 4rem;
